@@ -77,6 +77,7 @@
 	<cffunction name="play" access="public" output="false" returntype="any" hint="Plays an audio file back to the caller. Twilio retrieves the file from a URL that you provide.">	
 		<cfargument name="url" type="string" required="true" hint="The URL of an audio file that Twilio will retrieve and play to the caller." />
 		<cfargument name="loop" type="numeric" required="false" default="1" hint="Specifies how many times the audio file is played. The default behavior is to play the audio once. Specifying '0' will cause the the audio file to loop until the call is hung up."/>
+		<cfargument name="childOf" type="string" required="false" default="" hint="The verb that this verb should be nested within." />
 		
 		<cfset var properties = StructNew() />
 		
@@ -89,7 +90,7 @@
 		<cfset properties["loop"] = Arguments.loop />
 		
 		<!--- Append this verb... --->
-		<cfset append(verb="Play", body=Arguments.Url, properties=properties) />
+		<cfset append(verb="Play", body=Arguments.Url, properties=properties, childOf=Arguments.childOf) />
 		<!--- Return and instance of this to allow for chaining... --->
 		<cfreturn this />
 	</cffunction>
