@@ -77,7 +77,7 @@
 		<!--- Create a list of all the valid request params for all the resources.  This list
 					will be used to make sure the proper case is sent in the REST request as well as
 					making sure that no extraneous parameters exist in the request... --->
-		<cfset var paramList = "AccountSid,AreaCode,AnsweredBy,ApiVersion,Body,CallDelay,CallDuration,CallSid,Contains,DateCreated,DateSent,DateUpdated,Distance,EndTime,Extension,FallbackMethod,FallbackUrl,FriendlyName,From,IfMachine,IncomingPhoneNumberSid,InLata,InRateCenter,InRegion,InPostalCode,IsoCountryCode,Log,MessageDate,Method,Muted,NearLatLong,NearNumber,Page,PageSize,PhoneNumber,SendDigits,SmsApplicationSid,SmsFallbackMethod,SmsFallbackUrl,SmsMethod,SmsUrl,StartTime,Status,StatusCallback,StatusCallbackMethod,Timeout,To,Url,ValidationCode,VoiceApplicationSid,VoiceCallerIdLookup,VoiceFallbackMethod,VoiceFallbackUrl,VoiceMethod,VoiceUrl" />
+		<cfset var paramList = "AccountSid,ApplicationSid,AreaCode,AnsweredBy,ApiVersion,Body,CallDelay,CallDuration,CallSid,Contains,DateCreated,DateSent,DateUpdated,Distance,EndTime,Extension,FallbackMethod,FallbackUrl,FriendlyName,From,IfMachine,IncomingPhoneNumberSid,InLata,InRateCenter,InRegion,InPostalCode,IsoCountryCode,Log,MessageDate,Method,Muted,NearLatLong,NearNumber,Page,PageSize,PhoneNumber,SendDigits,SmsApplicationSid,SmsFallbackMethod,SmsFallbackUrl,SmsMethod,SmsUrl,StartTime,Status,StatusCallback,StatusCallbackMethod,Timeout,To,Url,ValidationCode,VoiceApplicationSid,VoiceCallerIdLookup,VoiceFallbackMethod,VoiceFallbackUrl,VoiceMethod,VoiceUrl" />
 		<cfreturn paramList />
 	</cffunction>
 	
